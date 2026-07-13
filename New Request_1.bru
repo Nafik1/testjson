@@ -1,0 +1,85 @@
+meta {
+  name: New Request_1
+  type: http
+  seq: 4
+}
+
+delete {
+  url: postman-echo.com/delete
+  body: text
+  auth: inherit
+}
+
+body:text {
+  {
+  	"name": "Add your name in the body"
+  }
+}
+
+settings {
+  encodeUrl: true
+}
+
+example {
+  name: New Request
+  
+  request: {
+    url: postman-echo.com/delete
+    method: DELETE
+    mode: text
+    body:text: {
+      {
+      	"name": "Add your name in the body"
+      }
+    }
+  }
+  
+  response: {
+    headers: {
+      Date: Mon, 13 Jul 2026 07:53:24 GMT
+      Content-Type: application/json; charset=utf-8
+      Transfer-Encoding: chunked
+      Connection: keep-alive
+      etag: W/"2d8-dByhkZmzFK9wn27pEVTsO/lsp+c"
+      vary: Accept-Encoding
+      x-envoy-upstream-service-time: 5
+      cf-cache-status: DYNAMIC
+      Set-Cookie: sails.sid=s%3AeJbl_o646LR9bmwKwqN2KColdkBIoUsU.QIwSsGu1Saxf4cMJFXACte7N38fZp1oT1%2Fs4sU5jpNo; Path=/; HttpOnly
+      set-cookie: _cfuvid=0IJluQqcJEBO8Bagl7lMThlCC.L8ETPI7o._93kOEJE-1783929204.8352165-1.0.1.1-buQ89ZpQ24K49bLo67ylvI_UAuE1I8nkoASLsv5fUMs; HttpOnly; SameSite=None; Secure; Path=/; Domain=postman-echo.com
+      Content-Encoding: gzip
+      Server: cloudflare
+      CF-RAY: a1a6b6ba3b168d63-HEL
+    }
+  
+    status: {
+      code: 200
+      text: OK
+    }
+  
+    body: {
+      type: json
+      content: '''
+        {
+            "args": {},
+            "data": "{\n\t\"name\": \"Add your name in the body\"\n}",
+            "files": {},
+            "form": {},
+            "headers": {
+                "host": "postman-echo.com",
+                "cache-control": "no-cache",
+                "postman-token": "ff8a1939-7d07-4307-bca5-d97c370a4579",
+                "accept-encoding": "gzip",
+                "x-forwarded-proto": "https",
+                "content-length": "40",
+                "content-type": "text/plain",
+                "user-agent": "PostmanRuntime/7.49.1",
+                "accept": "*/*",
+                "cookie": "__cf_bm=0p1xIjwsAZiZ8IV5asOcXoHPyj0jEJdwjb6DwQgkM8c-1783928530.314104-1.0.1.1-kL32z8JkVKKms_1gK5Z1SJmbLoZiN4CFz4uivl6ZvrRGQfchURPYalQCa2.qnAX5DTE6gPj21Ajai_4kYxb.m4lVsiAPeCiGcj2ME5lqAlJOm_aPHBy7TcZiyvXxehjh; sails.sid=s%3A980nBzKDanaR8uarM6PxlSMly6-UOzSo.c3y8d746s4eMc8Wfksj0CTl9%2FmTUTNr0tYNd95UzXcc"
+            },
+            "json": null,
+            "url": "https://postman-echo.com/delete"
+        }
+      '''
+    }
+  }
+}

@@ -1,0 +1,77 @@
+meta {
+  name: Get data
+  type: http
+  seq: 1
+}
+
+get {
+  url: postman-echo.com/get
+  body: none
+  auth: inherit
+}
+
+script:post-response {
+  test("Status code is 200", function () {
+      expect(res.getStatus()).to.equal(200);
+  });
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
+
+docs {
+  This is a GET request and it is used to "get" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).
+  
+  A successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data.
+}
+
+example {
+  name: example
+  
+  request: {
+    url: postman-echo.com/get
+    method: GET
+    mode: none
+  }
+  
+  response: {
+    headers: {
+      date: Mon, 13 Jul 2026 08:12:11 GMT
+      content-type: application/json; charset=utf-8
+      transfer-encoding: chunked
+      connection: keep-alive
+      etag: W/"100-RNxgqNqVN84Z/ZQvb83CPHgqHvA"
+      vary: Accept-Encoding
+      x-envoy-upstream-service-time: 4
+      cf-cache-status: DYNAMIC
+      set-cookie: sails.sid=s%3ARHjEsZ6nS5J39I8bMCb3RJGEtgROE0dT.MvtsbTQtx3mDEKBoUNLRvWwnLrCznoP%2FrfKgwTP9tYY; Path=/; HttpOnly,__cf_bm=8KPsLC6J1NSOs063SkB1Pl01aWYEoEYUHX0lnHbR6SM-1783930330.9749885-1.0.1.1-bYTSkB1fqZKo8YBGVX0mBV3RD87rcNfS855g.8lUan0gwtM9YsLMafKIXFlpOGyhtT70YKXoJkBnO5m3RWcaayRiLH1H3u1Q7jMyoPbey2J3qRs5OG7P1UQVnjghiaq3; HttpOnly; Path=/; Domain=postman-echo.com; Expires=Mon, 13 Jul 2026 08:42:11 GMT,_cfuvid=mjvH9.UjTLcLSihlfVKF6wfb9OUCs1vu8lahnNHfCIY-1783930330.9749885-1.0.1.1-RJ8JcokbybxIfj5MMXpecitmufETLyREjB6q7a0ypNQ; HttpOnly; SameSite=None; Secure; Path=/; Domain=postman-echo.com
+      server: cloudflare
+      cf-ray: a1a6d2389cbcf4d8-HEL
+    }
+  
+    status: {
+      code: 200
+      text: OK
+    }
+  
+    body: {
+      type: json
+      content: '''
+        {
+          "args": {},
+          "headers": {
+            "host": "postman-echo.com",
+            "x-forwarded-proto": "https",
+            "accept": "application/json, text/plain, */*",
+            "user-agent": "bruno-runtime/3.5.1",
+            "accept-encoding": "gzip",
+            "request-start-time": "1783930330435"
+          },
+          "url": "https://postman-echo.com/get"
+        }
+      '''
+    }
+  }
+}

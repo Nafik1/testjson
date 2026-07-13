@@ -1,0 +1,111 @@
+meta {
+  name: New Request
+  type: http
+  seq: 3
+}
+
+get {
+  url: http://
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}
+
+example {
+  name: New Request
+  
+  request: {
+    url: https://postman-echo.com/get?source=gitlab-sharing
+    method: GET
+    mode: none
+    params:query: {
+      source: gitlab-sharing
+    }
+  }
+  
+  response: {
+    headers: {
+      Date: Fri, 10 Jul 2026 16:25:12 GMT
+      Content-Type: application/json; charset=utf-8
+      Transfer-Encoding: chunked
+      Connection: keep-alive
+      etag: W/"144-Ero9256YLjnRHYkJ9OzJDdyquPU"
+      vary: Accept-Encoding
+      x-envoy-upstream-service-time: 4
+      cf-cache-status: DYNAMIC
+      Set-Cookie: sails.sid=s%3AVzwN76x2xPldL13QeHZ9247RB0ZVTIPg.EnO6UVnyg88aBTrd9Lowxd0te2eUDA%2B8KyRxIN8vTAU; Path=/; HttpOnly
+      set-cookie: __cf_bm=jbn7uZXktajhrDUrUV0YBdwXkO10FjbeDoSh69P_O90-1783700712.57871-1.0.1.1-PR3Z7YRum.sRD7jDgS9sVnc2g_Mo6fXxDs5wZ_yvE5ty7ENrPQDR5vROC7411ydYsfoTJAwu8zzh5QiMVZDSPGe5hRZ3T9m8vfCUc1mrN4O45_kL2osGkEFWHyTabeAp; HttpOnly; SameSite=None; Secure; Path=/; Domain=postman-echo.com; Expires=Fri, 10 Jul 2026 16:55:12 GMT
+      set-cookie: _cfuvid=FjXTmEe0mRjP1vgzn2m1ZRodwTKWiMRUcFpfQbLZMZo-1783700712.57871-1.0.1.1-AfvYMOBKC9LId4ga3XuakG7_NmCUhSVbL3PM548SEwg; HttpOnly; SameSite=None; Secure; Path=/; Domain=postman-echo.com
+      Content-Encoding: gzip
+      Server: cloudflare
+      CF-RAY: a190ec4d996abda3-HEL
+    }
+  
+    status: {
+      code: 200
+      text: OK
+    }
+  
+    body: {
+      type: json
+      content: '''
+        {
+            "args": {
+                "source": "gitlab-sharing"
+            },
+            "headers": {
+                "host": "postman-echo.com",
+                "x-forwarded-proto": "https",
+                "user-agent": "PostmanRuntime/7.49.1",
+                "accept": "*/*",
+                "accept-encoding": "gzip, br",
+                "postman-token": "7c3feae1-b58b-4f58-8b24-8dbcfa8f90ce",
+                "cache-control": "no-cache"
+            },
+            "url": "https://postman-echo.com/get?source=gitlab-sharing"
+        }
+      '''
+    }
+  }
+}
+
+example {
+  name: New Request
+  
+  request: {
+    url: https://postman-echo.com/zxcxzcxzc
+    method: GET
+    mode: none
+  }
+  
+  response: {
+    headers: {
+      Date: Fri, 10 Jul 2026 16:27:35 GMT
+      Content-Type: application/json; charset=utf-8
+      Transfer-Encoding: chunked
+      Connection: keep-alive
+      vary: Accept-Encoding
+      Set-Cookie: sails.sid=s%3AHd-onBZ6nIPH4sp9Gp1LQg5m-V_FiJdZ.84YVs87FRmoIX7UXFXRUAV2%2BUINXnSJ3hPh%2FCeXopgk; Path=/; HttpOnly
+      x-envoy-upstream-service-time: 4
+      cf-cache-status: DYNAMIC
+      Content-Encoding: gzip
+      Server: cloudflare
+      CF-RAY: a190efca1a29dfc7-HEL
+    }
+  
+    status: {
+      code: 404
+      text: Not Found
+    }
+  
+    body: {
+      type: json
+      content: '''
+  
+      '''
+    }
+  }
+}
