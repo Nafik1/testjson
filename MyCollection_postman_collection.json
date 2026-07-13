@@ -1,11 +1,11 @@
 {
 	"info": {
-		"_postman_id": "28e8ee5c-619a-47b8-90fc-9f264bf00682",
+		"_postman_id": "cb882a2f-0034-4ca6-8ce9-428ca7de5bfb",
 		"name": "My Collection",
 		"description": "### Welcome to Postman! This is your first collection. \n\nCollections are your starting point for building and testing APIs. You can use this one to:\n\n• Group related requests\n• Test your API in real-world scenarios\n• Document and share your requests\n\nUpdate the name and overview whenever you’re ready to make it yours.\n\n[Learn more about Postman Collections.](https://learning.postman.com/docs/collections/collections-overview/)",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "56542882",
-		"_collection_link": "https://egor-tkachev-1594178.postman.co/workspace/0b746e58-0e46-4104-8ed5-f66ce80fdf96/collection/56542882-28e8ee5c-619a-47b8-90fc-9f264bf00682?action=share&source=collection_link&creator=56542882"
+		"_collection_link": "https://egor-tkachev-1594178.postman.co/workspace/0b746e58-0e46-4104-8ed5-f66ce80fdf96/collection/56542882-cb882a2f-0034-4ca6-8ce9-428ca7de5bfb?action=share&source=collection_link&creator=56542882"
 	},
 	"item": [
 		{
@@ -80,97 +80,7 @@
 				},
 				"description": "This is a POST request, submitting data to an API via the request body. This request submits JSON data, and the data is reflected in the response.\n\nA successful POST request typically returns a `200 OK` or `201 Created` response code."
 			},
-			"response": [
-				{
-					"name": "Post data",
-					"originalRequest": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n\t\"name\": \"Add your name in the body\"\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "postman-echo.com/post",
-							"host": [
-								"postman-echo",
-								"com"
-							],
-							"path": [
-								"post"
-							]
-						}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "",
-					"header": [
-						{
-							"key": "Date",
-							"value": "Mon, 13 Jul 2026 07:42:10 GMT"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json; charset=utf-8"
-						},
-						{
-							"key": "Transfer-Encoding",
-							"value": "chunked"
-						},
-						{
-							"key": "Connection",
-							"value": "keep-alive"
-						},
-						{
-							"key": "etag",
-							"value": "W/\"1b7-ziAB8F7eZLj5IO6EwNcUMg2Eu4w\""
-						},
-						{
-							"key": "vary",
-							"value": "Accept-Encoding"
-						},
-						{
-							"key": "x-envoy-upstream-service-time",
-							"value": "5"
-						},
-						{
-							"key": "cf-cache-status",
-							"value": "DYNAMIC"
-						},
-						{
-							"key": "Set-Cookie",
-							"value": "sails.sid=s%3A980nBzKDanaR8uarM6PxlSMly6-UOzSo.c3y8d746s4eMc8Wfksj0CTl9%2FmTUTNr0tYNd95UzXcc; Path=/; HttpOnly"
-						},
-						{
-							"key": "set-cookie",
-							"value": "__cf_bm=0p1xIjwsAZiZ8IV5asOcXoHPyj0jEJdwjb6DwQgkM8c-1783928530.314104-1.0.1.1-kL32z8JkVKKms_1gK5Z1SJmbLoZiN4CFz4uivl6ZvrRGQfchURPYalQCa2.qnAX5DTE6gPj21Ajai_4kYxb.m4lVsiAPeCiGcj2ME5lqAlJOm_aPHBy7TcZiyvXxehjh; HttpOnly; Path=/; Domain=postman-echo.com; Expires=Mon, 13 Jul 2026 08:12:10 GMT"
-						},
-						{
-							"key": "set-cookie",
-							"value": "_cfuvid=b.AvO4pax.hNp9WPP4pkN.SOWJbYwmTQ0x2nWS2rnAc-1783928530.314104-1.0.1.1-bGLVbyYqibVvpoYOWcH9IDxLfbfK1TWC8DVDFnuzhMU; HttpOnly; SameSite=None; Secure; Path=/; Domain=postman-echo.com"
-						},
-						{
-							"key": "Content-Encoding",
-							"value": "gzip"
-						},
-						{
-							"key": "Server",
-							"value": "cloudflare"
-						},
-						{
-							"key": "CF-RAY",
-							"value": "a1a6a6427dfe266f-HEL"
-						}
-					],
-					"cookie": [],
-					"body": "{\n    \"args\": {},\n    \"data\": {\n        \"name\": \"Add your name in the body\"\n    },\n    \"files\": {},\n    \"form\": {},\n    \"headers\": {\n        \"host\": \"postman-echo.com\",\n        \"accept\": \"*/*\",\n        \"cache-control\": \"no-cache\",\n        \"accept-encoding\": \"gzip\",\n        \"postman-token\": \"e15b77bc-8a3f-4cea-a933-b9092a2fd013\",\n        \"x-forwarded-proto\": \"https\",\n        \"content-length\": \"40\",\n        \"content-type\": \"application/json\",\n        \"user-agent\": \"PostmanRuntime/7.49.1\"\n    },\n    \"json\": {\n        \"name\": \"Add your name in the body\"\n    },\n    \"url\": \"https://postman-echo.com/post\"\n}"
-				}
-			]
+			"response": []
 		},
 		{
 			"name": "New Request",
@@ -343,10 +253,105 @@
 		{
 			"name": "New Request",
 			"request": {
-				"method": "GET",
-				"header": []
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Add your name in the body\"\n}"
+				},
+				"url": {
+					"raw": "postman-echo.com/delete",
+					"host": [
+						"postman-echo",
+						"com"
+					],
+					"path": [
+						"delete"
+					]
+				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Add your name in the body\"\n}"
+						},
+						"url": {
+							"raw": "postman-echo.com/delete",
+							"host": [
+								"postman-echo",
+								"com"
+							],
+							"path": [
+								"delete"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 13 Jul 2026 07:53:24 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"2d8-dByhkZmzFK9wn27pEVTsO/lsp+c\""
+						},
+						{
+							"key": "vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "x-envoy-upstream-service-time",
+							"value": "5"
+						},
+						{
+							"key": "cf-cache-status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "sails.sid=s%3AeJbl_o646LR9bmwKwqN2KColdkBIoUsU.QIwSsGu1Saxf4cMJFXACte7N38fZp1oT1%2Fs4sU5jpNo; Path=/; HttpOnly"
+						},
+						{
+							"key": "set-cookie",
+							"value": "_cfuvid=0IJluQqcJEBO8Bagl7lMThlCC.L8ETPI7o._93kOEJE-1783929204.8352165-1.0.1.1-buQ89ZpQ24K49bLo67ylvI_UAuE1I8nkoASLsv5fUMs; HttpOnly; SameSite=None; Secure; Path=/; Domain=postman-echo.com"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "a1a6b6ba3b168d63-HEL"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"args\": {},\n    \"data\": \"{\\n\\t\\\"name\\\": \\\"Add your name in the body\\\"\\n}\",\n    \"files\": {},\n    \"form\": {},\n    \"headers\": {\n        \"host\": \"postman-echo.com\",\n        \"cache-control\": \"no-cache\",\n        \"postman-token\": \"ff8a1939-7d07-4307-bca5-d97c370a4579\",\n        \"accept-encoding\": \"gzip\",\n        \"x-forwarded-proto\": \"https\",\n        \"content-length\": \"40\",\n        \"content-type\": \"text/plain\",\n        \"user-agent\": \"PostmanRuntime/7.49.1\",\n        \"accept\": \"*/*\",\n        \"cookie\": \"__cf_bm=0p1xIjwsAZiZ8IV5asOcXoHPyj0jEJdwjb6DwQgkM8c-1783928530.314104-1.0.1.1-kL32z8JkVKKms_1gK5Z1SJmbLoZiN4CFz4uivl6ZvrRGQfchURPYalQCa2.qnAX5DTE6gPj21Ajai_4kYxb.m4lVsiAPeCiGcj2ME5lqAlJOm_aPHBy7TcZiyvXxehjh; sails.sid=s%3A980nBzKDanaR8uarM6PxlSMly6-UOzSo.c3y8d746s4eMc8Wfksj0CTl9%2FmTUTNr0tYNd95UzXcc\"\n    },\n    \"json\": null,\n    \"url\": \"https://postman-echo.com/delete\"\n}"
+				}
+			]
 		}
 	]
 }
